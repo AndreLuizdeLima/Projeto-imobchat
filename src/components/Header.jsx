@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import {Link} from "react-router-dom";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
         <>
-            <header className="h-[10vh] w-full bg-(--color-white) px-6 md:px-[80px] shadow-[0_1px_8px_rgba(0,0,0,0.08)] relative z-20">
+            <header className="h-[10vh] w-full bg-white px-6 md:px-20 shadow-[0_1px_8px_rgba(0,0,0,0.08)] relative z-20">
                 <nav className="flex items-center justify-between h-full">
 
                     {/* Logo */}
@@ -17,9 +18,12 @@ const Header = () => {
 
                     {/* Menu Desktop */}
                     <ul className="hidden md:flex gap-6 text-(--color-dark)">
-                        <li className="cursor-pointer hover:text-(--color-light) transition">
+                        <Link to='/' className="cursor-pointer hover:text-(--color-light) transition">
+                            Home
+                        </Link>
+                        <Link to='/contato' className="cursor-pointer hover:text-(--color-light) transition">
                             Contato
-                        </li>
+                        </Link>
                         <li className="cursor-pointer hover:text-(--color-light) transition">
                             Quem somos
                         </li>
@@ -66,6 +70,12 @@ const Header = () => {
                 </div>
 
                 <ul className="flex flex-col gap-6 p-6 text-(--color-dark)">
+                    <Link to='/'
+                        className="cursor-pointer hover:text-(--color-light)"
+                        onClick={() => setIsOpen(false)}
+                    >
+                        Home
+                    </Link>
                     <li
                         className="cursor-pointer hover:text-(--color-light)"
                         onClick={() => setIsOpen(false)}

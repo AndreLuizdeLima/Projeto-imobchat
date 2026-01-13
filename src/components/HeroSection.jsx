@@ -1,5 +1,6 @@
 import React from 'react';
 import MockChat from "./MockChat.jsx";
+import {Link} from "react-router-dom";
 
 const HeroSection = () => {
     return (
@@ -30,8 +31,9 @@ const HeroSection = () => {
                     </p>
 
                     <div className="flex justify-center md:justify-start">
-                        <a
-                            href="#mais-informacoes"
+                        <Link
+                            to='planos'
+
                             className="
                                 inline-block px-8 py-3
                                 border-2 border-(--color-primary)
@@ -42,7 +44,7 @@ const HeroSection = () => {
                             "
                         >
                             Mais informações
-                        </a>
+                        </Link>
                     </div>
                 </div>
 
