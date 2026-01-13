@@ -1,16 +1,139 @@
-# React + Vite
+# ImobChat 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Projeto para estudos apenas.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Plataforma moderna para **gestão imobiliária e relacionamento com clientes**, focada em performance, integração com sistemas de terceiros e uma experiência fluida para corretores e imobiliárias.
 
-## React Compiler
+Este repositório contém o **frontend do ImobChat**, desenvolvido com **React + Vite**, utilizando uma arquitetura de componentes reutilizáveis e foco em landing pages, agendamento de demonstrações e captação de leads.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![Preview do ImobChat](/public/logo-vertical-white-2.png)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## 🛠️ Tecnologias Utilizadas
+
+* **React**
+* **Vite**
+* **JavaScript (ES6+)**
+* **Tailwind CSS**
+* **React Router DOM**
+* **Framer Motion / Motion** (animações)
+
+---
+
+## 📦 Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado na sua máquina:
+
+* **Node.js** (versão 18 ou superior recomendada)
+* **npm** ou **yarn**
+
+Para verificar:
+
+```bash
+node -v
+npm -v
+```
+
+---
+
+## ▶️ Como rodar o projeto localmente
+
+### 1️⃣ Clonar o repositório
+
+```bash
+git clone https://github.com/seu-usuario/imobchat-frontend.git
+```
+
+```bash
+cd imobchat-frontend
+```
+
+---
+
+### 2️⃣ Instalar as dependências
+
+Usando npm:
+
+```bash
+npm install
+```
+
+---
+
+### 3️⃣ Iniciar o servidor de desenvolvimento
+
+```bash
+npm run dev
+```
+
+Após executar o comando, o Vite irá exibir no terminal algo como:
+
+```bash
+Local: http://localhost:5173/
+```
+
+Abra esse endereço no navegador para visualizar a aplicação.
+
+---
+
+## 🏗️ Build para produção
+
+Para gerar a versão otimizada para produção:
+
+```bash
+npm run build
+```
+
+Os arquivos finais serão gerados na pasta:
+
+```bash
+dist/
+```
+
+---
+
+
+## 📁 Estrutura básica do projeto
+
+```bash
+src/
+ ├── components/     # Componentes reutilizáveis
+ ├── pages/          # Páginas da aplicação
+ ├── assets/         # Imagens, ícones e estilos
+ ├── App.jsx
+ └── main.jsx
+```
+
+---
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas! 💜
+
+1. Faça um fork do projeto
+2. Crie uma branch (`git checkout -b feature/minha-feature`)
+3. Commit suas alterações (`git commit -m 'Minha nova feature'`)
+4. Push para a branch (`git push origin feature/minha-feature`)
+5. Abra um Pull Request
+
+---
+
+## 📄 Licença
+
+Este projeto é privado e de uso interno do **ImobChat**.
+
+---
+
+## 📞 Contato
+
+Em caso de dúvidas ou sugestões:
+
+* 🌐 Site: **ImobChat**
+* 💬 WhatsApp: integrado na plataforma
+
+---
+
+Desenvolvido com ❤️ pela equipe **ImobChat**
