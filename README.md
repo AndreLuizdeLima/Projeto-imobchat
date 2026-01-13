@@ -28,7 +28,7 @@ Este repositório contém o **frontend do ImobChat**, desenvolvido com **React +
 Antes de começar, você vai precisar ter instalado na sua máquina:
 
 * **Node.js** (versão 18 ou superior recomendada)
-* **npm** ou **yarn**
+* **npm**
 
 Para verificar:
 
@@ -123,17 +123,9 @@ Contribuições são bem-vindas! 💜
 
 ## 📄 Licença
 
-Este projeto é privado e de uso interno do **ImobChat**.
+Esse projeto é apenas academico não comercial
 
 ---
 
-## 📞 Contato
-
-Em caso de dúvidas ou sugestões:
-
-* 🌐 Site: **ImobChat**
-* 💬 WhatsApp: integrado na plataforma
-
----
 
 Desenvolvido com ❤️ pela equipe **ImobChat**
