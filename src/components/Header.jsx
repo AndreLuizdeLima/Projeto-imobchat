@@ -24,9 +24,9 @@ const Header = () => {
                         <Link to='/contato' className="cursor-pointer hover:text-(--color-light) transition">
                             Contato
                         </Link>
-                        <li className="cursor-pointer hover:text-(--color-light) transition">
-                            Quem somos
-                        </li>
+                        <Link to='/planos' className="cursor-pointer hover:text-(--color-light) transition">
+                            Mais informações
+                        </Link>
 
                     </ul>
 
@@ -76,18 +76,18 @@ const Header = () => {
                     >
                         Home
                     </Link>
-                    <li
+                    <Link to='/contato'
                         className="cursor-pointer hover:text-(--color-light)"
                         onClick={() => setIsOpen(false)}
                     >
                         Contato
-                    </li>
-                    <li
+                    </Link>
+                    <Link to='/planos'
                         className="cursor-pointer hover:text-(--color-light)"
                         onClick={() => setIsOpen(false)}
                     >
                         Quem somos
-                    </li>
+                    </Link>
                 </ul>
             </aside>
         </>

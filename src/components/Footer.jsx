@@ -1,11 +1,12 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer className="bg-(--color-primary) text-(--color-white)">
+        <footer className="bg-(--color-primary) text-white">
 
             {/* Conteúdo principal */}
-            <div className="mx-auto py-12 px-6 md:px-[80px]">
+            <div className="mx-auto py-12 px-6 md:px-20">
                 <div className="flex flex-col md:flex-row md:justify-around gap-8 md:gap-4">
 
                     {/* Logo */}
@@ -13,7 +14,7 @@ const Footer = () => {
                         <img
                             src="/logo-vertical-white-2.png"
                             alt="Logo ImobChat"
-                            className="h-[120px] object-contain"
+                            className="h-30 object-contain"
                         />
                         <span className="text-sm max-w-xs pt-3">
                             Solução inteligente para captação e qualificação de leads imobiliários.
@@ -25,10 +26,10 @@ const Footer = () => {
                         <h3 className="text-xl md:text-[2rem] font-semibold">
                             Links Rápidos
                         </h3>
-                        <a href="#" className="hover:text-(--color-light)">Home</a>
-                        <a href="#" className="hover:text-(--color-light)">Quem somos</a>
-                        <a href="#" className="hover:text-(--color-light)">Contato</a>
-                        <a href="#" className="hover:text-(--color-light)">Política de privacidade</a>
+                        <Link to='/'  className="hover:text-(--color-light)">Home</Link>
+                        <Link to='/contato'  className="hover:text-(--color-light)">Contato</Link>
+                        <Link to='/planos'  className="hover:text-(--color-light)">Mais Informações</Link>
+                        <Link  to='/politica-de-privacidade' className="hover:text-(--color-light)">Política de privacidade</Link>
                     </div>
 
                     {/* Contato */}
