@@ -36,21 +36,21 @@ const Features = () => {
     ];
 
     return (
-        <section className="py-24 bg-(--color-white) md:px-[80px]">
+        <section className="py-24 bg-imob-white md:px-[80px]">
             <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
                 {/* Texto */}
                 <div className="flex flex-col gap-6">
-                    <h2 className="text-3xl lg:text-4xl font-bold text-(--color-primary)">
+                    <h2 className="text-3xl lg:text-4xl font-bold text-imob-primary">
                         Capte mais leads qualificados com inteligência artificial
                     </h2>
 
-                    <p className="text-lg text-(--color-dark)">
+                    <p className="text-lg text-imob-dark">
                         Nossa IA atende seus leads instantaneamente, entende o perfil de cada cliente
                         e entrega oportunidades prontas para o time de corretores.
                     </p>
 
-                    <ul className="space-y-2 text-(--color-dark)">
+                    <ul className="space-y-2 text-imob-dark">
                         <li><i className="fa-solid fa-check mr-1"></i> Atendimento imediato</li>
                         <li><i className="fa-solid fa-check mr-1"></i> Filtragem inteligente</li>
                         <li><i className="fa-solid fa-check mr-1"></i> Mais conversão, menos esforço</li>

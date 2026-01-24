@@ -51,12 +51,12 @@ export default function PricingSection() {
     ]
 
     return (
-        <section className="w-full py-20 px-4 bg-(--color-white)">
+        <section className="w-full py-20 px-4 bg-imob-white">
             <div className="max-w-7xl mx-auto text-center mb-14">
-                <h2 className="text-3xl md:text-4xl font-bold text-(--color-primary)">
+                <h2 className="text-3xl md:text-4xl font-bold text-imob-primary">
                     Nossos Planos
                 </h2>
-                <p className="mt-4 text-(--color-dark) max-w-2xl mx-auto">
+                <p className="mt-4 text-imob-dark max-w-2xl mx-auto">
                     Escolha o plano ideal para o momento da sua imobiliária e evolua conforme
                     seu crescimento.
                 </p>
@@ -67,36 +67,35 @@ export default function PricingSection() {
                     <div
                         key={plan.name}
                         className={`relative rounded-2xl p-8 border bg-white shadow-sm flex flex-col
-              ${
-                            plan.highlighted
-                                ? "border-(--color-primary) shadow-lg scale-[1.02]"
+              ${plan.highlighted
+                                ? "border-imob-primary shadow-lg scale-[1.02]"
                                 : "border-gray-200"
-                        }
+                            }
             `}
                     >
                         {plan.badge && (
                             <span
-                                className="absolute -top-3 left-1/2 -translate-x-1/2 bg-(--color-secondary) text-white text-sm px-4 py-1 rounded-full">
-                {plan.badge}
-              </span>
+                                className="absolute -top-3 left-1/2 -translate-x-1/2 bg-imob-secondary text-white text-sm px-4 py-1 rounded-full">
+                                {plan.badge}
+                            </span>
                         )}
 
-                        <h3 className="text-2xl font-semibold text-(--color-primary)">
+                        <h3 className="text-2xl font-semibold text-imob-primary">
                             {plan.name}
                         </h3>
 
-                        <p className="mt-2 text-(--color-dark) text-sm">
+                        <p className="mt-2 text-imob-dark text-sm">
                             {plan.description}
                         </p>
 
                         <div className="mt-6">
-              <span className="text-3xl font-bold text-(--color-primary)">
-                {plan.price}
-              </span>
-                            <span className="text-(--color-dark) ml-1">{plan.period}</span>
+                            <span className="text-3xl font-bold text-imob-primary">
+                                {plan.price}
+                            </span>
+                            <span className="text-imob-dark ml-1">{plan.period}</span>
 
                             {plan.annual && (
-                                <p className="text-sm text-(--color-dark) mt-1">
+                                <p className="text-sm text-imob-dark mt-1">
                                     {plan.annual}
                                 </p>
                             )}
@@ -104,8 +103,8 @@ export default function PricingSection() {
 
                         <ul className="mt-6 space-y-3 text-left flex-1">
                             {plan.features.map((feature, index) => (
-                                <li key={index} className="flex items-start gap-2 text-(--color-dark)">
-                                    <span className="text-(--color-primary) mt-1"><i
+                                <li key={index} className="flex items-start gap-2 text-imob-dark">
+                                    <span className="text-imob-primary mt-1"><i
                                         className="fas fa-check"></i></span>
                                     <span>{feature}</span>
                                 </li>
@@ -115,13 +114,12 @@ export default function PricingSection() {
                         <button
                             disabled={plan.disabled}
                             className={`mt-8 w-full py-3 rounded-xl font-medium transition
-                ${
-                                plan.highlighted
-                                    ? "bg-(--color-primary) text-white hover:bg-(--color-secondary) cursor-pointer "
+                ${plan.highlighted
+                                    ? "bg-imob-primary text-white hover:bg-imob-secondary cursor-pointer "
                                     : plan.disabled
                                         ? "bg-gray-300 text-gray-600 cursor-not-allowed"
-                                        : "bg-(--color-dark) text-white cursor-pointer hover:bg-[#553b6c]"
-                            }
+                                        : "bg-imob-dark text-white cursor-pointer hover:bg-imob-primary"
+                                }
               `}
                         >
                             {plan.cta}

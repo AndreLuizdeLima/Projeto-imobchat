@@ -11,8 +11,8 @@ const WhatsAppButton = () => {
                 bottom-6
                 right-6
                 z-50
-                w-15
-                h-15
+                w-16
+                h-16
                 flex
                 items-center
                 justify-center
@@ -22,6 +22,8 @@ const WhatsAppButton = () => {
                 shadow-lg
                 hover:bg-green-600
                 transition
+                animate-bounce
+                hover:animate-none
             "
         >
             <i className="fab fa-whatsapp text-4xl"></i>

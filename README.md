@@ -44,11 +44,11 @@ npm -v
 ### 1️⃣ Clonar o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/imobchat-frontend.git
+git clone https://github.com/AndreLuizdeLima/Projeto-imobchat.git
 ```
 
 ```bash
-cd imobchat-frontend
+cd Projeto-imobchat
 ```
 
 ---

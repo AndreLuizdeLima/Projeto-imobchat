@@ -1,9 +1,9 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer className="bg-(--color-primary) text-white">
+        <footer className="bg-imob-primary text-white">
 
             {/* Conteúdo principal */}
             <div className="mx-auto py-12 px-6 md:px-20">
@@ -26,10 +26,10 @@ const Footer = () => {
                         <h3 className="text-xl md:text-[2rem] font-semibold">
                             Links Rápidos
                         </h3>
-                        <Link to='/'  className="hover:text-(--color-light)">Home</Link>
-                        <Link to='/contato'  className="hover:text-(--color-light)">Contato</Link>
-                        <Link to='/planos'  className="hover:text-(--color-light)">Mais Informações</Link>
-                        <Link  to='/politica-de-privacidade' className="hover:text-(--color-light)">Política de privacidade</Link>
+                        <Link to='/' className="hover:text-imob-light">Home</Link>
+                        <Link to='/contato' className="hover:text-imob-light">Contato</Link>
+                        <Link to='/planos' className="hover:text-imob-light">Mais Informações</Link>
+                        <Link to='/politica-de-privacidade' className="hover:text-imob-light">Política de privacidade</Link>
                     </div>
 
                     {/* Contato */}
@@ -61,7 +61,7 @@ const Footer = () => {
                         <a
                             href="#"
                             className="w-full md:w-auto mt-3 bg-white px-6 py-3
-                                text-(--color-primary) rounded-lg font-bold
+                                text-imob-primary rounded-lg font-bold
                                 hover:bg-[#f6e9ff] transition text-center"
                         >
                             <i className="fa-brands fa-whatsapp mr-2"></i>
