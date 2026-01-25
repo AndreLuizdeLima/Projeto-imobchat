@@ -21,7 +21,7 @@ const HowItWorks = () => {
         <div className="max-w-6xl mx-auto px-6">
 
             {/* Título */}
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-20 text-(--color-primary) ">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-20 text-imob-primary ">
                 Como funciona
 
             </h2>
@@ -40,15 +40,15 @@ const HowItWorks = () => {
                         className="relative z-10 flex flex-col items-center text-center max-w-55">
 
                         <div
-                            className="w-16 h-16 flex items-center justify-center rounded-full bg-(--color-primary) text-white shadow-lg mb-5">
-                            <i className={`${step.icon} text-xl`}/>
+                            className="w-16 h-16 flex items-center justify-center rounded-full bg-imob-primary text-white shadow-lg mb-5">
+                            <i className={`${step.icon} text-xl`} />
                         </div>
 
-                        <h3 className="font-semibold text-lg mb-2 text-(--color-dark)">
+                        <h3 className="font-semibold text-lg mb-2 text-imob-dark">
                             {step.title}
                         </h3>
 
-                        <p className="text-sm text-(--color-dark)">
+                        <p className="text-sm text-imob-dark">
                             {step.description}
                         </p>
                     </div>

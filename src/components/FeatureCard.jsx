@@ -27,15 +27,15 @@ const FeatureCard = ({ icon, title, description }) => {
                 hover:shadow-md transition
             "
         >
-            <div className="w-10 h-10 flex items-center justify-center rounded-lg text-(--color-white) bg-(--color-secondary)">
+            <div className="w-10 h-10 flex items-center justify-center rounded-lg text-imob-white bg-imob-secondary">
                 <i className={`${icon} text-2xl`} />
             </div>
 
-            <h4 className="text-lg font-semibold text-(--color-dark)">
+            <h4 className="text-lg font-semibold text-imob-dark">
                 {title}
             </h4>
 
-            <p className="text-sm text-(--color-dark)">
+            <p className="text-sm text-imob-dark">
                 {description}
             </p>
         </motion.div>

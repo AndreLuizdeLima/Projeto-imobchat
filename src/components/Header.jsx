@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
-import {Link} from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const location = useLocation();
+
+    const isActive = (path) => location.pathname === path;
 
     return (
         <>
-            <header className="h-[10vh] w-full bg-white px-6 md:px-20 shadow-[0_1px_8px_rgba(0,0,0,0.08)] relative z-20">
+            <header className="h-[10vh] w-full bg-white/80 backdrop-blur-md px-6 md:px-20 shadow-[0_1px_8px_rgba(0,0,0,0.08)] sticky top-0 z-50">
                 <nav className="flex items-center justify-between h-full">
 
                     {/* Logo */}
@@ -17,14 +20,14 @@ const Header = () => {
                     />
 
                     {/* Menu Desktop */}
-                    <ul className="hidden md:flex gap-6 text-(--color-dark)">
-                        <Link to='/' className="cursor-pointer hover:text-(--color-light) transition">
+                    <ul className="hidden md:flex gap-6 text-imob-dark">
+                        <Link to='/' className={`cursor-pointer transition ${isActive('/') ? 'text-imob-primary font-semibold' : 'hover:text-imob-light'}`}>
                             Home
                         </Link>
-                        <Link to='/contato' className="cursor-pointer hover:text-(--color-light) transition">
+                        <Link to='/contato' className={`cursor-pointer transition ${isActive('/contato') ? 'text-imob-primary font-semibold' : 'hover:text-imob-light'}`}>
                             Contato
                         </Link>
-                        <Link to='/planos' className="cursor-pointer hover:text-(--color-light) transition">
+                        <Link to='/planos' className={`cursor-pointer transition ${isActive('/planos') ? 'text-imob-primary font-semibold' : 'hover:text-imob-light'}`}>
                             Mais informações
                         </Link>
 
@@ -36,7 +39,7 @@ const Header = () => {
                         onClick={() => setIsOpen(true)}
                         aria-label="Abrir menu"
                     >
-                        <i className="fa-solid fa-bars text-(--color-primary)"></i>
+                        <i className="fa-solid fa-bars text-imob-primary"></i>
                     </button>
                 </nav>
             </header>
@@ -65,25 +68,25 @@ const Header = () => {
                         className="text-2xl"
                         aria-label="Fechar menu"
                     >
-                        <i className="fa-solid fa-xmark text-(--color-primary)"></i>
+                        <i className="fa-solid fa-xmark text-imob-primary"></i>
                     </button>
                 </div>
 
-                <ul className="flex flex-col gap-6 p-6 text-(--color-dark)">
+                <ul className="flex flex-col gap-6 p-6 text-imob-dark">
                     <Link to='/'
-                        className="cursor-pointer hover:text-(--color-light)"
+                        className={`cursor-pointer transition ${isActive('/') ? 'text-imob-primary font-semibold' : 'hover:text-imob-light'}`}
                         onClick={() => setIsOpen(false)}
                     >
                         Home
                     </Link>
                     <Link to='/contato'
-                        className="cursor-pointer hover:text-(--color-light)"
+                        className={`cursor-pointer transition ${isActive('/contato') ? 'text-imob-primary font-semibold' : 'hover:text-imob-light'}`}
                         onClick={() => setIsOpen(false)}
                     >
                         Contato
                     </Link>
                     <Link to='/planos'
-                        className="cursor-pointer hover:text-(--color-light)"
+                        className={`cursor-pointer transition ${isActive('/planos') ? 'text-imob-primary font-semibold' : 'hover:text-imob-light'}`}
                         onClick={() => setIsOpen(false)}
                     >
                         Quem somos
